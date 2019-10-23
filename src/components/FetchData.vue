@@ -20,7 +20,7 @@ export default {
         }
     },
     mounted () {
-        axios.get('http://localhost:8001/api/users')
+        axios.get('https://iadtprofessionalpractice.herokuapp.com/api/users')
         .then(response => (this.users = response.data))
 
     }
