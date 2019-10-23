@@ -5,6 +5,7 @@
         <div v-for="user in users" v-bind:key="user.id" class="item">
             <h2>{{ user.name }}</h2>
             <p>Email: {{user.email}}</p>
+            <p>{{ user.api_token !== null ? '' : 'Online'}}</p>
         </div>
     </div>
 </template>
